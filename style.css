@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: "poppins" ,sans-serif; */
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.main{
+    position: absolute;
+    width: 70%;
+    height:75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    /* border:2px solid black; */
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    width: 40%;
+    height: 90%;
+}
+.container h1{
+    text-align: center;
+    margin-top: 18px;
+}
+.container p{
+    text-align: center;
+    margin-top: 15px;
+}
+.container .input{
+  position: relative;
+  width: 100%;
+  font-size: 26px;
+  /* background-color: blueviolet; */
+  height: 50px;
+  margin: 30px 0;
+}
+.input input{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    height: 100%;
+    border-radius: 12px ;
+    border: none;
+    font-size: 16px;
+    text-align: center;
+    /* background-color: aquamarine; */
+    margin-left: 15px;
+}
+.input-box input::placeholder{
+    margin-left: 5px;
+    
+}
+.input i{
+    position: absolute;
+    top: 50%;
+    left: 22px;
+    font-size: 20px;
+    color: black;
+    transform: translateY(-50%);
+}
+.container .btn{
+   width: 30%;
+   height: 35px;
+   margin-left: 35%;
+   border: none;
+   border-radius: 10px;
+   color: white;
+   cursor: pointer;
+   background-color: #341bb6;
+}
+
+.link p{
+    margin-top: 20px;
+    /* padding-bottom: 1px; */
+}
+.link p a{
+    text-decoration: none;
+    font-weight: 600;
+}
+.link i {
+    font-size: 20px;
+}
+.container-2{
+    /* border: 2px solid black; */
+    position: relative;
+    width: 40%;
+    height: 90%;
+}
+.img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.text{
+    position:  absolute;
+    top: 19%;
+    color: white;
+    margin-left: 25%;
+}
+
+@media only screen and (max-width: 768px){
+    .container{
+        width: 90%;
+    }
+    .container-2{
+        width: 90%;
+    }
+    .container h1{
+        font-size: 22px;
+    }
+    .container p{
+        font-size: 18px;
+    }
+    .input input{
+        font-size: 20px;
+    }
+    .container .btn{
+        width: 40%;
+    }
+    .input-box input::placeholder{
+        margin-left: 0px;
+    }
+    .link p{
+        margin-top: 10px;
+    }
+    .text{
+        top: 25%;
+        margin-left: 15%;
+    }
+}
